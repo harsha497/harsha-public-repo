@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NextGen Gaming Console</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: url('https://imgs.search.brave.com/nA8UYofFlfX6Vo9UONIPsR9wi33r2NnjQ_Jd19K6cVk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM0/MDcyOTY2NS9waG90/by9wbGF5aW5nLXZp/ZGVvLWdhbWVzLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1K/ZnBRb2x6SlpkOTV6/VTF2Q0tSMzNORTlt/dEdYVy1PNGRxLWt1/TjRONmVjPQ') center/cover no-repeat;
+      height: 90vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero {
+      position: relative;
+      z-index: 1;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #f0f0f0;
+    }
+    .btn {
+      background: #ff3c00;
+      padding: 14px 32px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #d13200; }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+    .card h3 {
+      padding: 20px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .main-img-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: #fafafa;
+    }
+    .main-img-section img {
+      width: 95%;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .main-img-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #ff3c00;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; }
+      .card img { height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section with Custom Main Image -->
+  <header>
+    <div class="hero">
+      <h1>NextGen Gaming Console</h1>
+      <p>Unleash your power. Step into immersive gameplay with ultra-realism.</p>
+      <a href="#gallery" class="btn">View Gallery</a>
+    </div>
+  </header>
+
+  <!-- Main Large Image Section -->
+  <section class="main-img-section">
+    <h2>The Ultimate Gaming Experience</h2>
+    <img src="https://imgs.search.brave.com/Ys8NTDEMjD_UCtM4r-nDa3bAbOhaQlsH5HuOne8hWBg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEz/MjI4MjM2OS9waG90/by9tZW4tcGxheWlu/Zy12aWRlby1nYW1l/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9ZVBPOWFGRVdr/OVFzVjBvWEhwSHRX/SjQ2QTdWajVzeTdU/X2JaNTZEWjR6ST0" alt="Main Game Visual">
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" id="gallery">
+    <h2>Visual Showcase</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://imgs.search.brave.com/HwGC_qDrpqlhHExlsWqZ-V7U0oXYKY8wvuHtUovzVRg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NjIwNDQzNi9waG90/by9nYW1lci1oYW5k/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9VjFJMllPS0Et/N1g3bWFVMnpNVW5W/bEk1NnZIZ2V2ZnJL/b01DaExrNWNNbz0" alt="Gaming Image 2">
+        <h3>Immersive Gameplay</h3>
+      </div>
+      <div class="card">
+        <img src="https://imgs.search.brave.com/d32X3qyzWdVbKCeg3sGu092lG_c1Ou3h7aBiQS7JOh8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM3/MzYxMzgxNC9waG90/by9nYW1lci13b3Jr/LXNwYWNlLWNvbmNl/cHQtZ2FtaW5nLXNl/dC11cC10b3Atdmll/dy1vZi1hLWdhbWlu/Zy1nZWFyLWtleWJv/YXJkLW1vdXNlLWdh/bWVwYWQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUdidG1y/d2xPX0h5X2N3SkFK/bUlqdGlEMEh0cXk5/a0RETVA2U3p5cjNq/NU09" alt="Gaming Image 3">
+        <h3>Futuristic Setup</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NextGen Gaming. All rights reserved.</p>
+    <p>
+      <a href="#">Home</a> |
+      <a href="#">Privacy</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
